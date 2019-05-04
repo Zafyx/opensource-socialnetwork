@@ -10,9 +10,9 @@
  */
 define('__THEMEDIR__', ossn_route()->themes . 'whattowear/');
 
-ossn_register_callback('ossn', 'init', 'ossn_goblue_theme_init');
+ossn_register_callback('ossn', 'init', 'ossn_whattowear_theme_init');
 
-function ossn_goblue_theme_init(){
+function ossn_whattowear_theme_init(){
 	//add bootstrap
 	ossn_new_css('bootstrap.min', 'css/bootstrap/bootstrap.min.css');
 	//ossn_new_js('bootstrap.min', 'js/bootstrap/bootstrap.min.js');
@@ -27,11 +27,11 @@ function ossn_goblue_theme_init(){
 	ossn_load_css('ossn.default');
 	ossn_load_css('ossn.admin.default', 'admin');
 
-	ossn_extend_view('ossn/admin/head', 'ossn_goblue_admin_head');
-	ossn_extend_view('ossn/site/head', 'ossn_goblue_head');
-    ossn_extend_view('js/opensource.socialnetwork', 'js/goblue');
+	ossn_extend_view('ossn/admin/head', 'ossn_whattowear_admin_head');
+	ossn_extend_view('ossn/site/head', 'ossn_whattowear_head');
+    ossn_extend_view('js/opensource.socialnetwork', 'js/whattowear');
 }
-function ossn_goblue_head(){
+function ossn_whattowear_head(){
 	$head	 = array();
 
 	$head[]  = ossn_html_css(array(
@@ -48,7 +48,7 @@ function ossn_goblue_head(){
 			  ));
 	return implode('', $head);
 }
-function ossn_goblue_admin_head(){
+function ossn_whattowear_admin_head(){
 	$head	 = array();
 	$head[]  = ossn_html_css(array(
 					'href' => '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
