@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme xmlns="http://www.opensource-socialnetwork.org/theme/v/3.0">
+    <name>WhatToWear</name>
+    <id>whattowear</id>
+    <author>Adelina Pérez Pardo</author>
+    <author_url>http://www.adelina.com/</author_url>
+    <description>Tema acomodado para ayudar en la elección de conjuntos de moda y demás.</description>
+    <license>GNU General Public License, version 2</license>
+	<license_url>http://www.opensource-socialnetwork.org/licence</license_url>
+    <version>1.0</version>
+	<requires>
+		<type>ossn_version</type>
+		<version>4.4</version>
+	</requires>
+</theme>
