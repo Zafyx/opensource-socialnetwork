@@ -4,13 +4,13 @@
 
 body {
 	font-size: 14px;
-	background-color: #F7F7F7;
+	background-color: #fffaf8;
 	font-family: 'PT Sans', sans-serif;
 	height: 100%;
 }
 
 .ossn-required {
-	color: #a94442;
+	color: #fff8f4;
 }
 
 ::-webkit-scrollbar {
@@ -99,11 +99,11 @@ p {
 }
 
 .btn-primary {
-	background-color: #2a87a7;
+	background-color: #c1bdfa;
 }
 
 a {
-	color: #0f3b4a;
+	color: #c1bdfa;
 }
 
 
@@ -165,7 +165,7 @@ a {
 }
 
 .ossn-layout-module .module-title {
-	background: #F9F7F7;
+	background: #fff8f4;
 	border: 1px solid #eee;
 	padding: 10px;
 }
@@ -255,11 +255,11 @@ a {
 
 
 /*******************************
-	Topbar	
+	Topbar
 ********************************/
 
 .topbar {
-	background: #0b769c;
+	background: #c1bdfa;
 	color: #fff;
 	z-index: 1;
 	position: relative;
@@ -304,7 +304,7 @@ a {
 .topbar-menu-right li:hover,
 .topbar-menu-left li:hover {
 	cursor: pointer;
-	background-color: #0a6586;
+	background-color: #a4acdc;
 }
 
 .topbar .right-side-nospace .topbar-menu-right {
@@ -326,7 +326,7 @@ a {
 .topbar .ossn-icons-topbar-friends,
 .topbar .ossn-icons-topbar-messages,
 .topbar .ossn-icons-topbar-notification i {
-	color: #0f3b4a;
+	color: #fff;
 }
 
 .topbar .ossn-icons-topbar-friends-new,
@@ -1062,7 +1062,7 @@ a {
 
 .ossn-notifications-box .notificaton-item:hover,
 .ossn-notifications-box .notificaton-item .active {
-	background-color: #F9F9F9;
+	background-color: #a4acdc;
 }
 
 .ossn-notifications-box .type-name {
@@ -1169,7 +1169,7 @@ a {
 .ossn-notifications-box a:hover,
 .ossn-notifications-all a:hover,
 .ossn-notifications-all li:hover {
-	background: #F9F9F9;
+	background: #a4acdc;
 }
 
 .ossn-notification-container {
@@ -1525,7 +1525,7 @@ a {
 }
 
 .ossn-menu-search li:hover {
-	background: #F9F9F9;
+	background: #a4acdc;
 }
 
 .ossn-menu-search li a {
@@ -1630,7 +1630,7 @@ li.token-input-token span {
 }
 
 li.token-input-selected-token {
-	background-color: #F9F9F9;
+	background-color: #a4acdc;
 	border: 1px solid #eee;
 	color: #2B5470;
 	font-weight: bold;
@@ -1688,7 +1688,7 @@ div.token-input-dropdown ul li em {
 }
 
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
-	background-color: #F9F9F9;
+	background-color: #a4acdc;
 	color: #2B5470;
 	font-weight: bold;
 }
