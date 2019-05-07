@@ -1714,7 +1714,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 .ossn-message-done {
 	border: 1px solid #ffd4e5;
 	border-width: 1px;
-	background-color: #DAF6FF;
+	background-color: #ffedf4;
 	padding: 13px;
 	text-align: left;
 }
