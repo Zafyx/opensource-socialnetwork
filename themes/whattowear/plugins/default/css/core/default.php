@@ -1095,7 +1095,7 @@ a {
 }
 
 .ossn-notifications-box .type-name .links a {
-	color: #337ab7;
+	color: #b294a0;
 	display: inline;
 	font-weight: normal;
 }
@@ -1109,7 +1109,7 @@ a {
 
 .ossn-notifications-box .bottom-all a,
 .ossn-notifications-box .notfi-meta strong {
-	color: #337ab7;
+	color: #b294a0;
 }
 
 .ossn-notifications-box .notfi-meta {
@@ -1216,7 +1216,7 @@ a {
 }
 
 .notification-friends .notfi-meta a {
-	color: #337ab7;
+	color: #b294a0;
 	font-weight: bold;
 	display: inline-block;
 	width: 200px;
@@ -1590,7 +1590,7 @@ ul.token-input-list {
 	background-color: #fff;
 	list-style-type: none;
 	clear: left;
-	color: #2B5470;
+	color: #c1bdfa;
 	border-top: 1px dashed #EEE;
 	border-right: 1px solid #EEE;
 	border-left: 1px solid #EEE;
@@ -1603,7 +1603,7 @@ li.token-input-token {
 	margin: 3px;
 	padding: 1px 3px;
 	background-color: #eff2f7;
-	color: #2B5470;
+	color: #c1bdfa;
 	cursor: default;
 	font-weight: bold;
 	border: 1px solid #ccd5e4;
@@ -1632,7 +1632,7 @@ li.token-input-token span {
 li.token-input-selected-token {
 	background-color: #a4acdc;
 	border: 1px solid #eee;
-	color: #2B5470;
+	color: #c1bdfa;
 	font-weight: bold;
 }
 
@@ -1689,7 +1689,7 @@ div.token-input-dropdown ul li em {
 
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 	background-color: #a4acdc;
-	color: #2B5470;
+	color: #c1bdfa;
 	font-weight: bold;
 }
 
@@ -1712,7 +1712,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 /** v1-v3 compitible **/
 
 .ossn-message-done {
-	border: 1px solid #1EB0DF;
+	border: 1px solid #ffd4e5;
 	border-width: 1px;
 	background-color: #DAF6FF;
 	padding: 13px;
@@ -1950,7 +1950,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 	-moz-animation: three-quarters-loader 1250ms infinite linear;
 	-webkit-animation: three-quarters-loader 1250ms infinite linear;
 	animation: three-quarters-loader 1250ms infinite linear;
-	border: 8px solid #38e;
+	border: 8px solid #e5bece;
 	border-right-color: transparent;
 	border-radius: 16px;
 	box-sizing: border-box;
