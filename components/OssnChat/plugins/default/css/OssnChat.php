@@ -68,10 +68,10 @@ img.ustatus.ossn-chat-icon-online {
 }
 
 .ossn-chat-tab-titles {
-    background: #0b769c;
+    background: #c1bdfa;
     color: #fff;
     padding: 3px;
-    border: 1px solid #086c90;
+    border: 1px solid #c1adfa;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -97,8 +97,8 @@ img.ustatus.ossn-chat-icon-online {
 }
 
 .ossn-chat-tab-titles:hover {
-    background: #086c90;
-    border: 1px solid #0b769c;
+    background: #c1bdfa;
+    border: 1px solid #c1bdfa;
 }
 
 .ossn-chat-tab-titles .text {
@@ -118,9 +118,9 @@ img.ustatus.ossn-chat-icon-online {
     overflow: hidden;
     overflow-y: scroll;
     height: 236px;
-    
+
     border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;    
+    border-right: 1px solid #ccc;
 }
 
 .ossn-chat-base .ossn-chat-bar .friends-list-item:hover {
@@ -173,7 +173,7 @@ img.ustatus.ossn-chat-icon-online {
     -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
     border: 1px solid #ccc;
     height: 35px;
-    
+
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
 }
@@ -331,7 +331,7 @@ img.ustatus.ossn-chat-icon-online {
     float: left;
     display: none;
 	margin-top: -2px;
-    position: absolute;     
+    position: absolute;
 }
 
 .ossn-chat-icon-smilies {
@@ -470,7 +470,7 @@ and (min-width : 1360px) {
         width: 50px;
         height: 50px;
     }
-	
+
 
     .ossn-chat-windows-long .friends-list-item .name {
         margin-top: -25px;
@@ -536,8 +536,8 @@ and (min-width : 1360px) {
     	display:none !important;
     }
 }
-footer { 
-	margin-bottom:50px;	
+footer {
+	margin-bottom:50px;
 }
 @-ms-viewport {
    width: auto;

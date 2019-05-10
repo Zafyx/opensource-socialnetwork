@@ -19,15 +19,15 @@ $es = array(
 	'photos:ossn' => 'Fotos',
 	'admin:view:site' => 'Ver Sitio',
 	
-	'home:top:heading' => "¡Bienvenido a %s! Regístrate para hacer nuevos amigos, crear grupos, añadir fotos, y mucho más.",
+	'home:top:heading' => "¡Bienvenido a %s! Regístrate para poder hacer nuevos amigos y que estos te ayuden a crear nuevos atuendos estupendos para cada ocasión.",
 	'create:account' => 'Crear una cuenta',
 	'its:free' => "Es gratis y siempre lo será.",
-	
+
 	'register:ok:message' => 'Se ha registrado su cuenta. Se ha enviado un correo electrónico de activación a su buzón de correo. Si no recibió el correo electrónico, compruebe su carpeta de spam/basura.',
-	
+
 	'copyright' => '&copy; COPYRIGHT',
 	'powered' => 'Powered by the Open Source Social Network.',
-	
+
 	'name' => 'Nombre',
 	'birthdate' => 'Fecha de nacimiento',
 	'first:name' => 'Nombre',
@@ -43,16 +43,16 @@ $es = array(
 	'female' => 'Mujer',
 	'account:create:notice' => 'Al hacer clic en Crear una cuenta, usted está de acuerdo a nuestros',
 	'gender' => 'Género',
-	
+
 	'account:settings' => 'Configuraciones de la cuenta',
 	'page:error' => '¡Página no encontrada!',
 	'page:error:text' => 'La página solicitada no está disponible o puede haber sido eliminada.',
 	'page:error:heading' => '404',
-	
+
 	'search:users' => 'Personas',
 	'admin:logout' => 'Cerrar sesión',
 	'logout' => 'Cerrar sesión',
-	
+
 	'ossn:like:this' => '%s le gusta esto',
 	'ossn:like:you:and:this' => 'Tu y %s le gusta esto',
 	'ossn:like:people' => '%s Personas',
@@ -60,7 +60,7 @@ $es = array(
 	'ossn:liked:you' => 'Te gustó esto',
 	'ossn:unlike' => 'No me gusta',
 	'ossn:like' => 'Me gusta',
-	
+
 	'admin:components' => 'Componentes',
 	'admin:dashboard' => 'Tablero',
 	'admin:install' => 'Instalador',
@@ -71,27 +71,27 @@ $es = array(
 	'configure' => 'Configurar',
 	'admin:help' => 'Ayuda',
 	'admin:support' => 'Soporte',
-	
+
 	'ossn:update:check:error' => 'Error',
-	
+
 	'upload' => 'Subir',
 	'save' => 'Guardar',
 	'add' => 'Añadir',
 	'edit' => 'Editar',
 	'search' => 'Buscar',
 	'delete' => 'Borrar',
-	
+
 	'admin:users' => 'Listar Usuarios',
 	'admin:add:user' => 'Agregar Usuario',
 	'admin:user:deleted' => '¡El usuario ha sido eliminado!',
 	'admin:user:delete:error' => 'No se puede eliminar el usuario. Por favor, inténtelo de nuevo más tarde.',
-	
+
 	'type' => 'Tipo',
 	'normal' => 'Normal',
 	'admin' => 'Administrador',
-	
+
 	'lastlogin' => 'Último acceso',
-	
+
 	'my:version' => 'Mi versión de OSSN',
 	'online:users' => 'Usuarios en línea',
 	'themes' => 'Temas',
@@ -101,7 +101,7 @@ $es = array(
 	'website:name' => 'Nombre del Sitio Web',
 	'owner:email' => 'Correo electrónico del propietario',
 	'default:lang' => 'Idioma predeterminado',
-	
+
 	'timeline' => 'Línea de tiempo',
 	'photos' => 'Fotos',
 	'friends' => 'Amigos',
@@ -119,19 +119,19 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'user:friends' => 'Amigos',
 	'user:account:validated' => '¡La cuenta ha sido validada con éxito!',
 	'user:account:validate:fail' => 'No se puede validar la cuenta! Por favor, inténtelo de nuevo más tarde.',
-	
+
 	'cache:enabled' => 'Caché habilitado correctamente!',
 	'cache:disabled' => 'Caché deshabilitado correctamente!',
 	'cache:enable' => 'Habilitar caché',
 	'cache:disable' => 'Deshabilitar caché',
-	
+
 	'cache:1' => 'Habilitar',
 	'cache:0' => 'Deshabilitar',
 	'cache:notice' => 'Almacena archivos CSS y Javascript en un caché para mejorar el rendimiento del sitio.',
-	
+
 	'theme:install:notice' => 'Cargue un paquete de tema .zip válido.',
 	'com:install:notice' => 'Cargue un paquete de componente .zip válido.',
-	
+
 	'login:error' => '¡Usuario o contraseña invalido!',
 	'login:error:sub' => 'No pudimos iniciar sesión. Por favor, compruebe su nombre de usuario o contraseña y vuelva a intentarlo.',
 	'login:success' => 'Ahora está conectado!',
@@ -142,14 +142,14 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'com:delete:error' => 'No se puede eliminar el componente! Por favor, inténtelo de nuevo más tarde.',
 	'com:disabled' => 'Deshabilitado con éxito!',
 	'com:enabled' => 'Componente habilitado!',
-	
+
 	'theme:delete:active' => 'No se puede eliminar el tema activo.',
 	'theme:deleted' => 'Se ha eliminado el tema.',
 	'theme:delete:error' => 'No se puede eliminar el tema! Por favor, inténtelo de nuevo más tarde.',
 	'theme:enabled' => '¡El tema se ha habilitado correctamente!',
 	'theme:installed' => '¡El tema se ha instalado correctamente!',
 	'theme:install:error' => 'No se puede instalar el tema. Asegúrese de que es compatible con la versión OSSN que está utilizando.',
-	
+
 	'fields:require' => '¡Todos los campos son obligatorios!',
 	'username:error' => 'Nombre de usuario invalido.',
 	'password:error' => 'La contraseña debe tener más de 5 caracteres.',
@@ -162,9 +162,9 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'email:invalid' => '¡Dirección de correo electrónico es inválida! Asegúrese de que la dirección de correo electrónico que introdujo es correcta.',
 	'email:error:matching' => "Las direcciones de correo no coinciden.",
 	'account:created:email' => "Su cuenta ha sido registrada! Te hemos enviado un correo electrónico de activación de cuenta. Si no recibió el correo electrónico, compruebe su carpeta de spam/basura",
-	
+
 	'administration' => 'Administración',
-	
+
 	'privacy' => 'Privacidad',
 	'close' => 'Cerrado',
 	'open' => 'Abierto',
@@ -172,7 +172,7 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'friends' => 'Amigos',
 	'privacy:public:note' => 'Todos en este sitio pueden ver esto.',
 	'privacy:friends:note' => 'Sólo tus amigos pueden ver esto.',
-	
+
 	'add:friend' => 'Añadir amigo',
 	'cancel:request' => 'Cancelar solicitud',
 	'remove:friend' => 'No amigo',
@@ -180,18 +180,18 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'settings' => 'Ajustes',
 	'ossn:add:friend:error' => 'No se puede agregar un amigo!',
 	'ossn:friend:request:submitted' => '¡Tu solicitud de amistad ha sido enviada!',
-	
+
 	/* Upgrades */
 	'upgrade:file:load:error' => 'No se puede cargar el archivo de actualización!',
 	'upgrade:success' => "Su sitio web ha sido actualizado con éxito para lanzar %s.",
 	'upgrade:failed' => "No se puede actualizar su sitio a la versión %s.",
 	'upgrade:not:available' => 'Nada que mejorar!',
-	
+
 	'site:login' => 'Iniciar sesión',
 	/* Page errors */
 	'system:error:title' => '¡Algo salió mal!',
 	'system:error:text' => '¡Algo salió mal! Vuelve a cargar esta página e inténtalo de nuevo.',
-	
+
 	/* Password Reset */
 	'reset:login' => 'Restablecer la contraseña',
 	'reset:password' => 'Restablecer su contraseña',
@@ -200,7 +200,7 @@ Puede copiar y pegar la dirección a su navegador manualmente en caso de que el 
 	'enter:emai:reset:pwd' => 'Introduzca la dirección de correo electrónico de su cuenta para restablecer la contraseña.',
 	'ossn:reset:password:subject' => 'Restablecer su contraseña',
 	'ossn:reset:password:body' => "Hola %s,
-	
+
 Haga clic en el enlace de abajo para restablecer la contraseña o copie y pegue el enlace en la barra de direcciones de su navegador:
 
 %s
@@ -210,25 +210,25 @@ Haga clic en el enlace de abajo para restablecer la contraseña o copie y pegue 
 	'passord:reset:fail' => 'No se puede restablecer la contraseña! Por favor, inténtelo de nuevo más tarde.',
 	'password:reset:email:required' => '¡El correo electrónico no puede estar vacío!',
 	'passord:reset:email:success' => 'Las instrucciones de restablecimiento de contraseña se han enviado a su dirección de correo electrónico.',
-	
+
 	'erros:reporting' => 'Error al reportar',
 	'erros:off' => 'Apagado',
 	'erros:on' => 'Encendido',
 	'basic:settings' => 'Ajustes básicos',
-	
+
 	'ossn:new:version:error' => 'Desconocido',
 	'ossn:version:avaialbe' => "%s",
-	
+
 	'ossn:exception:title' => 'Se ha producido un error del sistema. Por favor, inténtelo de nuevo más tarde. Puede enviar por correo electrónico los detalles de este error al administrador del sistema en %s.',
 	'ossn:securitytoken:failed' => 'La acción solicitada no es válida.',
 	'ossn:component:delete:exception' => '¿Está seguro de que desea eliminar este componente?',
 	'ossn:user:delete:exception' => '¿Estás seguro de que quieres eliminar este usuario?',
-	
+
 	//access
 	'title:access:1' => 'Privado',
 	'title:access:2' => 'Público',
 	'title:access:3' => 'Amigos',
-	
+
 	'upload:file:error:ini_size' => 'El archivo que has intentado cargar es demasiado grande.',
 	'upload:file:error:form_size' => 'El archivo que has intentado cargar es demasiado grande.',
 	'upload:file:error:partial' => 'La carga del archivo no se completó.',
@@ -237,9 +237,9 @@ Haga clic en el enlace de abajo para restablecer la contraseña o copie y pegue 
 	'upload:file:error:cant_write' => 'No se puede guardar el archivo cargado.',
 	'upload:file:error:extension' => 'No se puede guardar el archivo cargado.',
 	'upload:file:error:unknown' => 'Error en la carga del archivo.',
-	
+
 	'ossn:post:size:exceed' => 'La acción solicitada excede el límite de tamaño.',
-	
+
 	'admin:com:installer' => 'Instalador de componentes',
 	'admin:theme:installer' => 'Instalador del tema',
 	'admin:cache:settings' => 'Configuración del caché',
@@ -274,13 +274,13 @@ Haga clic en el enlace de abajo para restablecer la contraseña o copie y pegue 
 	'admin:users:unvalidated' => 'Usuarios sin validar',
 	'admin:user:validated' => 'Usuario validado',
 	'admin:user:validate:error' => 'No se pudo validar el usuario.',
-	
+
 	//v3.0
 	//admin
 	'my:files:version' => 'Mi versión de los archivos de Ossn',
 	'cache:flush:error' => 'No se puede liberar la caché, asegúrese de que la caché esté habilitada en la configuración de caché',
 	'cache:flushed' => 'Caché enjuagado correctamente',
-	'ossn:version' => 'Versión OSSN', 
+	'ossn:version' => 'Versión OSSN',
 	'php:extension' => 'Extensión de PHP',
 	'php:version' => 'Versión de PHP',
 	'php:function' => 'Función PHP',
