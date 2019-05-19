@@ -24,12 +24,12 @@ require_once(__OSSN_PHOTOS__ . 'libraries/ossn.lib.albums.php');
  * @return void;
  * @access private;
  */
-function ossn_photos_initialize() {
+function ossn_ratePhotos_initialize() {
 		//css
 		ossn_extend_view('css/ossn.default', 'css/photos');
 		//js
 		ossn_extend_view('js/opensource.socialnetwork', 'js/OssnPhotos');
-		
+
 		//hooks
 		ossn_add_hook('profile', 'subpage', 'ossn_profile_photos_page');
 		ossn_add_hook('profile', 'modules', 'profile_modules_albums');
@@ -39,7 +39,7 @@ function ossn_photos_initialize() {
 		ossn_add_hook('photo:view', 'album:controls', 'ossn_album_photo_menu');
 		ossn_add_hook('cover:view', 'profile:controls', 'ossn_album_cover_photo_menu');
 		ossn_add_hook('wall:template', 'album:photos:wall', 'ossn_photos_wall');
-		
+
 		//actions
 		if(ossn_isLoggedin()) {
 				ossn_register_action('ossn/album/add', __OSSN_PHOTOS__ . 'actions/album/add.php');
@@ -55,12 +55,12 @@ function ossn_photos_initialize() {
 		ossn_register_callback('delete', 'album:photo', 'ossn_photos_likes_comments_delete');
 		ossn_register_callback('user', 'delete', 'ossn_user_photos_delete');
 		ossn_register_callback('ossn:photo', 'add:multiple', 'ossn_photos_add_to_wall');
-		
+
 		ossn_profile_subpage('photos');
-		
+
 		ossn_register_page('album', 'ossn_album_page_handler');
 		ossn_register_page('photos', 'ossn_photos_page_handler');
-		
+
 		$url = ossn_site_url();
 		if(ossn_isLoggedin()) {
 				$user_loggedin = ossn_loggedin_user();
@@ -72,7 +72,7 @@ function ossn_photos_initialize() {
 						'parent' => 'links',
 						'icon' => $icon
 				));
-				
+
 		}
 		//gallery plugin dist include
 		ossn_new_external_js('jquery.fancybox.min.js', '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js', false);
@@ -136,7 +136,7 @@ function ossn_notification_like_photo($hook, $type, $return, $params) {
 		$user           = ossn_user_by_guid($notif->poster_guid);
 		$user->fullname = "<strong>{$user->fullname}</strong>";
 		$iconURL        = $user->iconURL()->small;
-		
+
 		$img = "<div class='notification-image'><img src='{$iconURL}' /></div>";
 		if(preg_match('/like/i', $notif->type)) {
 				$type = 'like';
@@ -153,7 +153,7 @@ function ossn_notification_like_photo($hook, $type, $return, $params) {
 		$url               = ossn_site_url("photos/view/{$notif->subject_guid}");
 		$notification_read = "{$baseurl}notification/read/{$notif->guid}?notification=" . urlencode($url);
 		return "<a href='{$notification_read}'>
-	       <li {$viewed}> {$img} 
+	       <li {$viewed}> {$img}
 		   <div class='notfi-meta'> {$type}
 		   <div class='data'>" . ossn_print("ossn:notifications:{$notif->type}", array(
 				$user->fullname
@@ -171,7 +171,7 @@ function ossn_profile_menu_photos($event, $type, $params) {
 		$owner = ossn_user_by_guid(ossn_get_page_owner_guid());
 		$url   = ossn_site_url();
 		ossn_register_menu_link('photos', 'photos', $owner->profileURL('/photos'), 'user_timeline');
-		
+
 }
 
 /**
@@ -199,7 +199,7 @@ function profile_modules_albums($hook, $type, $module, $params) {
 		$user['user'] = $params['user'];
 		$content      = ossn_plugin_view("photos/modules/profile/albums", $user);
 		$title        = ossn_print('photo:albums');
-		
+
 		$module[] = ossn_view_widget(array(
 				'title' => $title,
 				'contents' => $content
@@ -223,17 +223,17 @@ function ossn_photos_page_handler($album) {
 				ossn_error_page();
 		}
 		switch($page) {
-				
+
 				case 'view':
 						if(isset($album[1])) {
-								
+
 								$title          = ossn_print('photos');
 								$photo['photo'] = $album[1];
-								
+
 								$view            = new OssnPhotos;
 								$image           = $view->GetPhoto($photo['photo']);
 								$photo['entity'] = $image;
-								
+
 								//redirect user to home page if image is empty
 								if(empty($image)) {
 										redirect();
@@ -257,15 +257,15 @@ function ossn_photos_page_handler($album) {
 						break;
 				case 'user':
 						if(isset($album[1]) && isset($album[2]) && $album[1] == 'view') {
-								
+
 								$title          = ossn_print('photos');
 								$photo['photo'] = $album[2];
 								$type           = input('type');
-								
+
 								$view            = new OssnPhotos;
 								$image           = $view->GetPhoto($photo['photo']);
 								$photo['entity'] = $image;
-								
+
 								//redirect user if photo is empty
 								if(empty($image->value)) {
 										redirect();
@@ -281,14 +281,14 @@ function ossn_photos_page_handler($album) {
 						break;
 				case 'cover':
 						if(isset($album[1]) && isset($album[2]) && $album[1] == 'view') {
-								
+
 								$title          = ossn_print('cover:view');
 								$photo['photo'] = $album[2];
 								$type           = input('type');
-								
+
 								$image           = ossn_get_entity($photo['photo']);
 								$photo['entity'] = $image;
-								
+
 								//redirect user if photo is empty
 								if(empty($image->value)) {
 										redirect();
@@ -316,10 +316,10 @@ function ossn_photos_page_handler($album) {
 				case 'viewer':
 						//ossn image viewer currently works for profile images
 						$image = input('user');
-						
+
 						$url   = ossn_site_url("avatar/{$image}");
 						$media = "<img src='{$url}' />";
-						
+
 						$photo_guid = get_profile_photo_guid(ossn_user_by_username($image)->guid);
 						//set viewer sidebar (comments and likes)
 						$sidebar    = ossn_plugin_view('photos/viewer/comments', array(
@@ -353,23 +353,23 @@ function ossn_album_page_handler($album) {
 		}
 		switch($page) {
 				case 'getphoto':
-						
+
 						$guid    = $album[1];
 						$picture = $album[2];
 						$size    = input('size');
-						
+
 						$name = str_replace(array(
 								'.jpg',
 								'.jpeg',
 								'gif'
 						), '', $picture);
 						$etag = $size . $name . $guid;
-						
+
 						if(isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH']) == "\"$etag\"") {
 								header("HTTP/1.1 304 Not Modified");
 								exit;
 						}
-						
+
 						// get image size
 						if(empty($size)) {
 								$datadir = ossn_get_userdata("object/{$guid}/album/photos/{$picture}");
@@ -378,7 +378,7 @@ function ossn_album_page_handler($album) {
 						}
 						//get image type
 						$type = input('type');
-						
+
 						if($type == '1') {
 								if(empty($size)) {
 										$datadir = ossn_get_userdata("user/{$guid}/profile/photo/{$picture}");
@@ -401,23 +401,23 @@ function ossn_album_page_handler($album) {
 						}
 						break;
 				case 'getcover':
-						
+
 						$guid    = $album[1];
 						$picture = $album[2];
 						$type    = input('type');
-						
+
 						$name = str_replace(array(
 								'.jpg',
 								'.jpeg',
 								'gif'
 						), '', $picture);
 						$etag = $size . $name . $guid;
-						
+
 						if(isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH']) == "\"$etag\"") {
 								header("HTTP/1.1 304 Not Modified");
 								exit;
 						}
-						
+
 						// get image size
 						$datadir = ossn_get_userdata("user/{$guid}/profile/cover/{$picture}");
 						if(empty($type)) {
@@ -446,15 +446,15 @@ function ossn_album_page_handler($album) {
 						ossn_load_external_js('jquery.fancybox.min.js');
 						if(isset($album[1])) {
 								$title = ossn_print('photos');
-								
+
 								$user['album'] = $album[1];
 								$albumget      = ossn_albums();
 								$owner         = $albumget->GetAlbum($album[1])->album;
-								
+
 								if(empty($owner)) {
 										ossn_error_page();
 								}
-								
+
 								//throw 404 page if there is no album access
 								if($owner->access == 3) {
 										if(!ossn_validate_access_friends($owner->owner_guid)) {
@@ -512,7 +512,7 @@ function ossn_album_page_handler($album) {
 				case 'profile':
 						if(isset($album[1])) {
 								$title = ossn_print('profile:photos');
-								
+
 								$user['user'] = ossn_user_by_guid($album[1]);
 								if(empty($user['user']->guid)) {
 										ossn_error_page();
@@ -540,7 +540,7 @@ function ossn_album_page_handler($album) {
 				case 'covers':
 						if(isset($album[2]) && $album[1] == 'profile') {
 								$title = ossn_print('profile:covers');
-								
+
 								$user['user'] = ossn_user_by_guid($album[2]);
 								if(empty($user['user']->guid)) {
 										ossn_error_page();
@@ -573,7 +573,7 @@ function ossn_album_page_handler($album) {
 								'callback' => '#ossn-album-submit'
 						));
 						break;
-				
+
 				default:
 						ossn_error_page();
 						break;
@@ -655,10 +655,10 @@ function ossn_photos_likes_comments_delete($name, $type, $params) {
 		if(class_exists('OssnLikes')) {
 				$likes = new OssnLikes;
 				$likes->deleteLikes($params['photo']['guid'], 'entity');
-				
+
 				$comments = new OssnComments;
 				$comments->commentsDeleteAll($params['photo']['guid'], 'comments:entity');
 		}
 }
 
-ossn_register_callback('ossn', 'init', 'ossn_photos_initialize');
+ossn_register_callback('ossn', 'init', 'ossn_ratePhotos_initialize');
